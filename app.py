@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 # Load model
 model = tf.keras.models.load_model(
-    os.path.join(os.path.dirname(__file__), "plant_model.h5")
+    os.path.join(os.path.dirname(__file__), "plant_model.h5"),compile=false
 )
 
 # Load class names
